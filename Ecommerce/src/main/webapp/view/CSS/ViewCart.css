@@ -1,0 +1,234 @@
+@charset "ISO-8859-1";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+::selection {
+  color: #000;
+  background: #fff;
+}
+nav {
+  position: fixed;
+  background: #1b1b1b;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu ul {
+  display: inline-flex;
+}
+.menu ul li {
+  list-style: none;
+  margin-left: 15px;
+}
+.menu ul li:first-child {
+  margin-left: 0px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:not(.no-hover):hover {
+  background: #fff;
+  color: black;
+}
+/* navbar css added */
+.user-img {
+  height: 45px;
+  width: 45px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.search-div {
+  padding-bottom: 10px;
+}
+.home {
+  display: flex;
+}
+.user-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Dropdown styles */
+.click-img {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  z-index: 1;
+  display: none;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.click-img a {
+  display: block;
+  padding: 10px;
+  color: #302e2e;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.click-img a:hover {
+  background-color: #f2f2f2;
+}
+.input {
+  min-height: 35px;
+  max-width: 200px;
+  padding: 0 1rem;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 6px 0 0 6px;
+  background-color: transparent;
+}
+
+.button--submit {
+  min-height: 30px;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: rgb(240, 178, 20);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button--submit:hover {
+  background-color: #5e5dcd;
+}
+
+.input:focus,
+.input:focus-visible {
+  border-color: rgb(240, 178, 20);
+  outline: none;
+}
+/* navbar css ends */
+
+/* view cart css */
+
+/* Style for cart container */
+.view-cart-dtls {
+  margin: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for cart heading */
+.view-cart-dtls {
+  margin-top: 100px;
+}
+.cart-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style for cart item table */
+.cart-items table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Style for table headers */
+.cart-items th {
+  text-align: left;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+/* Style for table data */
+.cart-items td {
+  font-size: 16px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style for item image */
+.view-cart-img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  float: left;
+}
+
+/* Style for item name */
+.cart-items h4 {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+/* Style for Order Now button */
+.Order-Now {
+  background-color:green;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Style for Order Now button on hover */
+.Order-Now:hover {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(163, 175, 243) 0%,
+    rgb(220, 182, 232) 100.2%
+  );
+}
+
+/* Style for input field */
+.cart-items input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+.Delete {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+

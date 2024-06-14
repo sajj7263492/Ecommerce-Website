@@ -1,0 +1,63 @@
+@charset "ISO-8859-1";
+body {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(163, 175, 243) 0%,
+    rgb(220, 182, 232) 100.2%
+  );
+}
+
+.login-form {
+  height: 450px;
+  width: 400px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.admin-heading {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.form-input {
+  margin: 30px;
+}
+
+.form-input label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form-input input[type="text"],
+.form-input input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-input input[type="submit"] {
+  background-color: rgb(240, 178, 20);
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form-input input[type="submit"]:hover {
+  background-color: #2e8b57;
+}

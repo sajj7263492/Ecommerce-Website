@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(163, 175, 243) 0%,
+    rgb(220, 182, 232) 100.2%
+  );
+  background-size: cover;
+}
+.container {
+  max-width: 650px;
+  background-color: white;
+  padding: 28px;
+  margin: 40px auto 0; 
+  border-radius: 10px;
+}
+.form-title {
+  font-size: 26px;
+  text-align: center;
+  padding-bottom: 6px;
+  color: black;
+}
+.main-user-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.user-input-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+}
+.user-input-box label {
+  width: 95%;
+  color: black;
+  font-size: 20px;
+  margin: 5px 0;
+}
+.user-input-box input {
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 17px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.gender-title {
+  color: black;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+}
+.gender-category {
+  margin: 12px 0;
+  color: black;
+}
+.gender-category label {
+  padding: 0 20px 0 5px;
+  font-size: 18px;
+}
+.gender-category label,
+.gender-category input,
+.form-submit-btn input {
+  cursor: pointer;
+}
+.form-submit-btn {
+  margin-top: 20px;
+}
+.form-submit-btn input {
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+  font-size: 17px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background: rgb(240, 178, 20);
+  color: white;
+}
